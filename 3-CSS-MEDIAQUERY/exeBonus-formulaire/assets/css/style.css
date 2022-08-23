@@ -1,0 +1,169 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.backgroundDiv {
+    overflow: hidden;
+    position: relative;
+    height: 25rem;
+    width: 100%;
+}
+
+.backgroundImagePaysage, .backgroundImagePortrait { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /*   WORKS LIKE { background-size: cover; }  */
+    opacity: 0.5;
+}
+
+.backgroundImagePaysage {
+    visibility: hidden;
+}
+
+.sections {
+    position: relative;
+    text-align: center;
+    padding: 2rem;
+}
+
+.sections p {
+    margin: 2rem;
+    text-align: justify;
+}
+
+/* FORM CSS */
+
+input, textarea {
+    border : 0.12rem solid black;
+    border-radius: 0.9rem;
+}  
+
+.firstList {
+    background-color: lightblue;
+}
+
+.secondList {
+    background-color: lightcoral;
+}
+
+.thirdList {
+    background-color: lightseagreen;
+}
+#thirdListCardType {
+    width: 5rem;
+    padding: 1rem;
+}
+form {
+    margin: auto;
+    background-color: gainsboro;    
+    width: 95%;
+    border: 0.2rem #757575 solid;
+    border-radius: 1.5rem;
+}
+form p {
+    padding: 1rem;
+    font-weight: bold;
+}
+form h2 {
+    text-align: center;
+}
+.submitButton {
+    width: 33%;
+    padding: 1rem;
+    margin: 0.2rem;
+    margin-left: 10rem;
+    margin-bottom: 1.2rem;
+    border-radius: 1rem;
+    border-style: groove;
+    background-color: gray;
+}
+.submitButton:hover {
+    background-color:  salmon;
+    border-color: red;
+}
+
+@media (min-width: 1024px) {
+    form {
+        width: auto;
+        box-sizing: content-box;
+    }
+    form h2 {
+        text-align: center;
+        padding-left: 0.5rem;
+    }
+    .formDiv {
+        display: flex;
+    }
+    form ol {
+        display: block;
+        box-sizing: content-box;
+        width: 40%;
+    }
+    form ol li {
+        box-sizing: content-box;
+        display: block;
+    }
+    .submitButton{
+        padding: 0.7rem;
+        margin: 0.5rem;
+        margin-bottom: 1.2rem;
+        width: 20%;
+        height: min-content;
+        font-weight: bold;
+    }
+    .submitDiv {
+        text-align: center;    
+        display: block;
+    }
+}
+
+
+/* FORM CSS END */
+
+footer {
+    background-color: gray;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: auto;
+    border-top: solid 0.2rem gray;
+    margin-top: 2rem;
+}
+footer ul {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none;
+    margin-bottom: 0;
+}
+footer ul li {
+    padding: 0.8rem;
+    padding-top: 0.2rem;
+}
+
+/* Media for changing background and boxes inside background */
+
+@media (min-width: 1024px) {  /*|| @media (orientation:landscape )*/
+    .backgroundImagePaysage {
+        visibility: visible;
+    }
+    .backgroundImagePortrait {
+        visibility: hidden;
+    }
+    .sections {
+        display: flex;   
+    }
+}
+
+@media (max-width: 576px) {
+    footer ul {
+        display: block;
+    }
+    footer {
+        height: auto;
+    }
+}

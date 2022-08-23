@@ -1,0 +1,20 @@
+th,
+td {
+  margin: 0;
+  padding: 3px;
+  border: 1px solid #666;
+}
+table,
+th,
+td {
+  border-collapse: collapse;
+}
+tfoot {
+  text-align: center;
+}
+.bold {
+  font-weight: bold;
+}
+.red {
+  color: red;
+}

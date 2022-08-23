@@ -1,0 +1,45 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+form {
+    background-color: antiquewhite;
+    display: block;
+    padding: 1em;
+    width: max-content;
+}
+form * {
+    display: flex;
+
+}
+
+#gradeBox {
+    background-color: antiquewhite;
+    width: max-content;
+    padding: 2rem;
+}
+#gradesList{
+    border: 0.2rem white solid;
+    padding: 1rem;
+    margin: 1rem;
+}
+#resultBox {
+    display: flex;
+    justify-content: space-between;
+}
+#resultBox *{
+    width: fit-content;
+    border: 0.2rem white solid;
+    padding: 0.2rem;
+    margin: 1rem;
+}
+#result{
+    width: 2.7rem;
+    overflow: hidden;
+}
+
+/* exercice  variation  */
+

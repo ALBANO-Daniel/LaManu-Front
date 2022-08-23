@@ -1,0 +1,37 @@
+/* CUSTOM CLASSES */
+.redBorder{
+    border-color :red;
+    border-style: inherit;
+}
+.greenBorder{
+    border-color:green;
+    border-style: inherit;
+}
+/* END CUSTOM CLASSES */
+
+body{
+    display:block;
+    background: blanchedalmond;   
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+form {
+    display: block;
+    align-items: center;
+    background-color: antiquewhite;
+    border: solid 2px black;
+    width: fit-content;
+    padding: 5em;
+}
+form *{
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+    border-color: none;
+    accent-color: gray;
+}
+#submitBtn {
+    margin: 3.5em;
+    margin-top: 2em;
+}
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercice 7</title>
+    <link rel="icon" href="../IMG/favicon-16x16.png" />
+    <link rel="stylesheet" href="index.css" />
+
+  </head>
+
+  <body>
+
+    <form action="/action_page.php" method="get" class="form">
+
+      <ol class="firstList">
+        <p>Votre Identité</p>
+        <li>
+          <label for="firstListname">Nom :</label>
+          <input
+            type="text"
+            id="firstListname"
+            name="firstListname"
+            placeholder="votre nom"
+          /><br /><br />
+        </li>
+        <li>
+          <label for="firstListSousName">Prénom :</label>
+          <input
+            type="text"
+            id="firstListSousName"
+            name="firstListSousName"
+            placeholder="votre Prénom"
+          /><br /><br />
+        </li>
+        <li>
+          <label for="firstListEmail">Adresse mail :</label>
+          <input
+            type="text"
+            id="firstListEmail"
+            name="firstListEmail"
+            placeholder="example@example.fr"
+          /><br /><br />
+        </li>
+      </ol>
+
+      <ol class="secondList">
+        <p>Adresse de livraison</p>
+        <li>
+          <label for="secondListAdress">Adresse : </label><br />
+          <textarea
+            id="secondListAdress"
+            rows="5"
+            cols="25"
+            name="secondListAdress"
+            placeholder="votre adress..."
+          ></textarea
+          ><br /><br />
+        </li>
+        <li>
+          <label for="secondListCodePostal">Code postal :</label>
+          <input
+            type="text"
+            id="secondListCodePostal"
+            name="secondListCodePostal"
+            placeholder="Code postal..."
+          /><br /><br />
+        </li>
+        <li>
+          <label for="secondListVille">Ville :</label>
+          <input
+            type="text"
+            id="secondListVille"
+            name="secondListVille"
+            placeholder="Ville..."
+          /><br /><br />
+        </li>
+      </ol>
+
+      <ol class="thirdList">
+        <p>Informations de réglement</p>
+        <li>
+          <label for="thirdListCardType">Type de carte bancaire :</label><br /><br />
+          <input type="radio" id="thirdListCardType" name="thirdListCardType" />
+          VISA<br /><br />
+          <input type="radio" id="thirdListCardType" name="thirdListCardType" />
+          Mastercard<br /><br />
+        </li>
+        <li>
+          <label for="thirdListCardNumber">Numéro de carte:</label>
+          <input
+            type="text"
+            id="thirdListCardNumber"
+            name="thirdListCardNumber"
+            placeholder="Numéro de carte"
+          /><br /><br />
+        </li>
+        <li>
+          <label for="thirdListSecurityCode">Code de sécurité:</label>
+          <input
+            type="text"
+            id="thirdListSecurityCode"
+            name="thirdListSecurityCode"
+            placeholder="Code de sécurité"
+          /><br /><br />
+        </li>
+        <li>
+          <label for="thirdListCardOwner">Nom du titulaire:</label>
+          <input
+            type="text"
+            id="thirdListCardOwner"
+            name="thirdListCardOwner"
+            placeholder="Nom du titulaire"
+          /><br /><br />
+        </li>
+      </ol>
+
+      <input class="submitButton" type="submit" value="Submit" />
+
+    </form>
+  </body>
+</html>

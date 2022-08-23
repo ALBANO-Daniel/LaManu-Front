@@ -1,0 +1,25 @@
+body{
+    font-size: 18px;
+    background-color: antiquewhite;
+}
+form{
+    display:block;
+    background-color: aliceblue;
+    border: 2px gray solid;
+    width: fit-content;
+    padding: 2rem;
+}
+form *{
+    display: flex;
+}
+.formParag{
+    visibility: hidden;
+    color:red;
+    font-size: 9px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.notHidden {
+    visibility: visible;
+}

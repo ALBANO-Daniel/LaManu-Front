@@ -1,0 +1,74 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.backgroundDiv {
+    overflow: hidden;
+    position: relative;
+    height: 25rem;
+    width: 100%;
+}
+
+.backgroundImagePaysage, .backgroundImagePortrait { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /*   WORKS LIKE { background-size: cover; }  */
+    opacity: 0.5;
+}
+
+.backgroundImagePaysage {
+    visibility: hidden;
+}
+
+.sections {
+    position: relative;
+    text-align: center;
+    padding: 2rem;
+}
+
+.sections p {
+    margin: 2rem;
+    text-align: justify;
+}
+
+footer {
+    background-color: gainsboro;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 90px;
+}
+footer ul {
+    display: flex;
+    justify-content: space-around;
+}
+footer ul li {
+    padding: 10px;
+    padding-top: 30px;
+}
+
+/* Media for changing background and boxes inside background */
+
+@media (min-width: 1024px) {  /*|| @media (orientation:landscape )*/
+    .backgroundImagePaysage {
+        visibility: visible;
+    }
+    .backgroundImagePortrait {
+        visibility: hidden;
+    }
+    .sections {
+        display: flex;   
+    }
+}
+
+@media (max-width: 576px) {
+    footer ul {
+        display: block;
+    }
+    footer {
+        height: auto;
+    }
+}

@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.backgroundImagePaysage, .backgroundImagePortrait { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /*   WORKS LIKE { background-size: cover; }  */
+}
+.backgroundImagePaysage {
+    visibility: hidden;
+}
+
+@media (min-width: 1024px) {
+    .backgroundImagePaysage {
+        height: 50%;
+       visibility: visible;
+    }
+    .backgroundImagePortrait {
+        visibility: hidden;
+    }
+}

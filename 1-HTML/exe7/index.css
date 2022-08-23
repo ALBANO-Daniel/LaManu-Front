@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+ol p {
+    font-size: 20px;
+}
+
+.firstList {
+    background-color: lightblue;
+}
+
+.secondList {
+    background-color: lightcoral;
+}
+
+.thirdList {
+    background-color: lightseagreen;
+}
+#thirdListCardType {
+    width: 30px;
+    padding: 20px;
+}
+form {
+    margin-left: 500px;
+    background-color: gainsboro;    
+    width: 33%;
+    border: 5px #757575 solid;
+    border-radius: 25px;
+}
+
+.submitButton {
+    width: 33%;
+    padding: 10px;
+    margin: 5px;
+    margin-left: 170px;
+    margin-bottom: 15px;
+    border-radius: 45px;
+    border-style: groove;
+    background-color: gray;
+}
+.submitButton:hover {
+    background-color:  salmon;
+    border-color: red;
+}

@@ -1,0 +1,15 @@
+Exercice 1 
+
+A partir du fichier de données movies.json, reproduire la maquette TheManuMovieDataBase.png
+
+Exercice 2 
+
+Faire une gestion des liens d'exposés en utilisant le local storage.
+
+Pour cela vous devrez faire  une page permettant les fonctionnalités suivantes:
+
+    enregistrer un lien Prezi.
+
+    lister tous les exposés (titres et liens)
+
+    supprimer un lien depuis la liste
